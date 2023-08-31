@@ -15,9 +15,9 @@ type MenuSelected = {
 };
 
 const MenuSelectedContext = createContext<MenuSelected>({
-  selectedMenu: { id: "first" }, // Приклад, якщо вам потрібно мати деяке початкове значення
+  selectedMenu: { id: "first" }, 
 });
-// Додайте тип MenuAction
+
 type MenuAction = {
   onSelectedMenu: (menu: SelectedMenu) => void;
 };
